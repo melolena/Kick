@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+    
+}
+
+
+table{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    border-spacing: 0px;
+    }
+
+#box1, #box2, #box3, #box4 {
+    background-color: rgb(3, 91, 3);
+    color: white;
+}
