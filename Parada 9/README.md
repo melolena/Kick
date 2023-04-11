@@ -14,4 +14,4 @@
 <img src="https://user-images.githubusercontent.com/89108304/231023073-764f8a0b-3bd3-4b60-8cf6-c46076750ab4.png">
 
 <h2>Site Aula 10</h2>
-<img src="(https://user-images.githubusercontent.com/89108304/231023271-c1d70ef1-b944-4e63-b8b5-5d13f45bb93a.pngs">
+<img src="https://user-images.githubusercontent.com/89108304/231023271-c1d70ef1-b944-4e63-b8b5-5d13f45bb93a.pngs">
