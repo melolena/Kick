@@ -1,0 +1,61 @@
+.header{
+    height: 200px;
+    display:flex;
+    flex-direction:row;
+    flex-flow: column;
+    align-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 4px solid rgba(223, 223, 223, 0.514);
+  
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    order: 1;
+}
+
+.subtitulo p{
+    display: inline-block;
+    margin: 10px;
+    color: gray;
+}
+
+.icons1{
+    align-self: flex-start;
+    order:0
+}
+
+.icons1 i{
+    margin: 5px;
+}
+
+
+.icons2{
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   right: 0;
+   margin-top: 5px;
+}
+
+.icons2  p, i{
+    margin:5px;
+}
+
+.icons2 p{
+    margin-top: auto;
+}
