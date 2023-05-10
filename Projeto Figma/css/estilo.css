@@ -5,7 +5,7 @@ body{
 /*header*/
 
 #header{
-    height: 200px;
+    height: 165px;
     border-bottom: 4px solid black;
     display: flex;
     flex-direction: row;
@@ -15,7 +15,7 @@ body{
 
 #header img{
     float: left;
-    height: 200px;
+    height: 164px;
 }
 
 .topnav{
@@ -29,14 +29,14 @@ body{
 .topnav a{
     float: right;
     width: 120px;
-    height: 27px;
+    height: 18px;
     margin: 15px;
     border: 1px solid #89a7a7;
     text-align: center;
-    border-radius: 300px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: 525;
-    font-size: 27px;
+    font-weight: 350;
+    font-size: 17px;
     color: #391463;
     display: flex;
     justify-content: center;
@@ -44,12 +44,12 @@ body{
 
 
 .topnav i{
-    width: 45px;
-    height: 45px;
+    width: 26px;
+    height: 23px;
     color: #391463;
-    font-size: 35px;
-    margin-left: 60px;
-    margin-top: 18px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 8px;
 }
 
 .topnav .active {
@@ -66,20 +66,22 @@ body{
 
 /*body*/
 body{
-    height: 589px;
+    height: 392px;
 }
 
 /*body 1*/
 .body1{
-    height: 361px;
+    height: 275px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 4px solid black;
 }
 
 /*Manchete*/
 #headline{
-    width: 821px;
-    height: 331px;
+    width: 547px;
+    height: 221px;
     display: flex;
     flex-direction: row;
     border: 1px solid #391463;
@@ -100,26 +102,26 @@ body{
 }
 
 .textNews h2{
-    margin: 21px 36px 40px 28px;
-    font-weight: 300px;
-    font-size: 37px;
+    margin: 21px 36px 10px 28px;
+    font-weight: 200px;
+    font-size: 20px;
+    text-align: center;
     color:#ea526f;   
     border-bottom: 1px solid #39146369;
 }
 
 .textNews p{
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 21px;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 14px;
     text-align: justify;
-    margin: 30px 19px 50px 8px;
+    margin: 20px 19px 20px 8px;
 
 }
 
 .textNews .leiaMais{
     align-self: flex-end;
     margin-right: 20px;
-    padding-bottom: 20px;
 }
 .leiaMais{
     color: #89a7a7;
@@ -129,6 +131,94 @@ body{
     text-decoration: none;
     font-style: normal;
     color: #89a7a7;
-    font-weight: 450;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Estrutura e título mais notícias*/
+#moreNews{
+    height: 221px;
+    width: 400px;
+    border: 1px solid #391463;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    font-weight: 200px;
+    margin: 27px 47px 40px 47px;
+
+}
+
+.titulo{
+    height: 33px;
+    width: 400px;
+    border-bottom: 1px solid #391463 ;
+}
+.titulo h2{
+    font-weight: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: #ea526f;
+    margin-top: 2px;
+}
+
+/*Primeira notícia*/
+
+#news1{
+    height: 35px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+#news1 h4{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    
+}
+
+#news1 p{
+    font-style: normal;
+    font-weight:600;
+    font-size: 12px;
+    line-height: 11px;
+    margin: top 10px;
+    color: #89a7a7;
+}
+
+/* Segunda notícia */
+
+#news2{
+    height: 35px;
+    width: 320px;
+    border-top: 1px solid #89a7a7;
+    border-bottom: 1px solid #89a7a7;
+    display: flex;
+    justify-content: center;
+}
+
+#news2 h4{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 20px;
+
+    
+}
+
+#news2 p{
+    font-style: normal;
+    font-weight:600;
+    font-size: 12px;
+    line-height: 11px;
+    margin: top 10px;
+    color: #89a7a7;
 }

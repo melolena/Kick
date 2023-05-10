@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nome{
+            color: blueviolet;
+        }
+
+        #cidade{
+            color: blue;
+        }
+
+        #idade{
+            color: red;
+        }
+
+    </style>
+</head>
+
+    <div id="nome"></div>
+    <div id="cidade"></div>
+    <div id="idade"></div>
+<body>
+    <script>
+        let nome1 = ""
+        let cidade1 = ""
+        let idade1 = ""
+
+        nome1 = prompt("Qual o seu nome?")
+        cidade1 = prompt("Qual a sua cidade?")
+        idade1 = prompt ("Qual a sua idade?")
+
+        document.getElementById("nome").innerHTML = nome1
+        document.getElementById("cidade").innerHTML = cidade1
+        document.getElementById("idade").innerHTML = idade1
+
+    </script>
+    
+</body>
+</html>
