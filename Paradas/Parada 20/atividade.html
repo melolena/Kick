@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="calculo" style="color: maroon;"></div>
+
+    <script>
+        let altura = parseFloat(prompt("Digite sua altura em metros (ex: 1.58)"));
+        let peso = parseFloat(prompt("Digite seu peso em kilos (ex: 63.2)"));
+        
+        let imc = peso / (altura * altura);
+        let resultado = ""; 
+
+        if (imc < 18.5){
+           resultado = document.getElementById("calculo").innerHTML = `IMC é ${imc} e está abaixo do peso`;
+        } else if (imc < 25){
+            resultado = document.getElementById("calculo").innerHTML = `IMC é ${imc} e é eutrófico`;
+        } else if (imc < 30){
+            resultado = document.getElementById("calculo").innerHTML = `IMC é ${imc} e está acima do peso`;
+            }else if ( imc > 30){
+           resultado = document.getElementById("calculo").innerHTML = `IMC é ${imc} e está em obesidade`;
+        }
+
+        document.getElementById("calculo").innerHTML = resultado;
+
+    
+
+    </script>
+    
+</body>
+</html>

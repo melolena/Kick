@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="soma" style="color: maroon; font-weight: 500; font-size: 25px; text-align: center;"></div>
+    <script>
+        //definir as variáveis dos candidatos
+        //abrir o menu de votação 
+        //finalizar dizendo a quantidade de votos totais por candidato
+        //botar a opção para sair
+
+        let opcao =10;
+        let voto = 50;
+
+        let Maria = 0;
+        let Pedro = 0;
+        let Vanessa = 0;
+        let Arthur = 0;
+        let nulo = 0;
+
+        while (opcao !=0) {
+            opcao = parseInt(prompt("1- Votar | 0- Sair"));
+            switch(opcao){
+                case 1:
+                voto = parseInt(prompt("escolha seu voto: 15- Maria | 20- Pedro | 12- Vanessa | 27- Artur"));
+                opcao = 1;
+
+                switch (voto ){
+                    case 12:
+                        alert ("Você votou em Vanessa");
+                        Vanessa ++;
+                        voto = 12;
+                        break;
+                    
+                    case 15:
+                       alert ("Você votou em Maria");
+                       Maria ++;  
+                       voto = 15;
+                        break;
+                    
+                    case 20:
+                        alert ("Você votou em Pedro");
+                        Pedro ++;
+                        voto = 20;
+                        break;                    
+                    
+                    case 27:
+                        alert ("Você votou em Arthur");
+                        Arthur ++;
+                        voto = 27;
+                        break;      
+                    
+                    default:
+                    alert ("Voto anulado");
+                    nulo ++;
+                    break;
+
+                }
+
+                
+            }
+        }
+
+        alert ("Você finalizou o processo")
+
+        document.getElementById("soma").innerHTML = `<h1>Votos Computadodos<h1><br> Maria: ${Maria} <br> Pedro: ${Pedro} <br> Vanessa: ${Vanessa} <br> Arthur ${Arthur} <br> Nulo: ${nulo}`;
+    </script>
+</body>
+</html>

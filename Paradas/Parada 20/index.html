@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" style="color: lightgreen; font-size: 100px; text-align: center;"></div>
+    <div id="mensagem" style="color: lightgreen; font-size: 100px; text-align: center;"></div>
+  
+  <script>
+       let valor = prompt("Digite um valor: ");
+       //convertendo um valor para inteiro
+       valor = parseInt(valor)
+       let resto = valor%2
+
+       if(resto != 0){
+        console.log ("é ímpar")
+        document.getElementById("main").innerHTML = "<h2> o valor é impar</h2>"
+        valor = valor + 5
+        document.getElementById("mensagem").innerHTML = `novo valor ${valor}`
+       } else{
+        console.log ("É par")
+        document.getElementById("main").innerHTML = "<h2> O valor é par </h2>"
+        valor = valor + 10 
+        document.getElementById("mensagem").innerHTML = `novo valor ${valor}`
+
+       }
+
+    </script>
+</body>
+</html>
