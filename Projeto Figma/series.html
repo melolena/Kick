@@ -15,25 +15,69 @@
         <div id="header">
             <img src="img/logo.png"> <!--logo-->
             <div class="topnav" id="myTopnav">
-                <a href="Valkyries.html">Início</a>
-                <a href="series.html"class="active">Séries</a>
-                <i class="fa-solid fa-bell" id="bell"></i>
+                <a href="javascript:void(0)" class="hamburguer" onclick="myfunction()">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="buttons">
+                        <a href="Valkyries.html">Início</a>
+                        <a href="series.html" class="active">Séries</a>
+                        <i class="fa-solid fa-bell" id="bell"></i>
+                    </div>
+                </a>
             </div>   
         </div> <!--fim header-->
         <!--body-->
-        <div class="body">
+        <div class="content">
+            <div class="part1"><!--início primeira linha do corpo-->
+                <div id="yellojackets">
+                    <a href="yellowjackets.html">
+                        <img src="img/yellowjackets.jpg"><br>
+                       <h3> Yellowjackets</h3>
+                    </a>
+                   
+                </div>
+                <div id="HOD">
+                    <a href="house-of-the-dragon.html">
+                        <img src="img/HOD.jpg">
+                        <h3>House of <br> the Dragon</h3>
+                    </a>
 
-        </div>
+                </div>
+            </div> <!--fim primeira linha corpo-->
+            <div class="part2"> <!--inicio segunda fila-->
+                <div id="sandman">
+                    <a href="thesandman.html">
+                        <img src="img/sandman.jpg"/>
+                        <h3>Sandman</h3>    
+                    </a>
+                </div>
+                <div id="tomorrow">
+                    <a href="tomorrow.html">
+                        <img src="img/tomorrow.jpg"/>
+                        <h3>Tomorrow</h3>
+                    </a>
+                </div>
+            </div> <!--fim segunda fila-->
+        </div> <!--fim body-->
         <!--footer-->
         <div class="footer">
             <h5 class="textFooter">Desenvolvido por  Milena Melo - 2023</h5>
             <div id="icons">
                <a href="https://instagram.com/meloomilenaa?igshid=OTk0YzhjMDVlZA=="><i class="fa-brands fa-instagram"></i></a>
-               <a href="mailto:milenasantosmelo@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+               <a href="mailto:milenasantosmelo@gmail.com"><i class="fa-regular fa-envelope"></i></a>   
 
             </div>
         </div>
     </div>
-    
+    <script>
+        function myfunction(){
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+            } else{
+                x.className = "topnav";
+            } 
+        }
+        
+    </script>
 </body>
 </html>

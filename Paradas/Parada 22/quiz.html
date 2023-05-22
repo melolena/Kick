@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const jogador = prompt ("Qual o seu nome?")
+        let op = 10;
+        let cont = 0; 
+        let pontuacao = 0;
+        let resposta;
+
+        while(op !=0){
+            op = parseInt(prompt("Qual tema você deseja jogar? \n 1 - Zoologia \n 2 - Astronomia \n 3- Microbiologia \n 4- Séries \n 0- Sair "));
+            switch (op){
+                case 1:
+                    resposta = prompt("O maior animal que já viveu é o dinossauro. Verdadeiro ou Falso").toLowerCase();
+                    if(resposta == "falso"){
+                        pontuacao++
+                    } else{
+                        alert ("Resposta incorreta")
+                    }
+                    resposta = prompt("A teoria da evolução diz que o mais forte sobrevive. Verdadeiro ou Falso").toLowerCase()
+                    if(resposta == "falso"){
+                        pontuacao++
+                    } else{
+                        alert ("Resposta incorreta")
+                    }
+                    resposta = prompt("Aves são dinossauros. Verdadeiro ou Falso").toLowerCase()
+                    if(resposta == "verdadeiro"){
+                        pontuacao++
+                    } else{
+                        alert ("Resposta incorreta")
+                    }
+                    alert(`${jogador}, você fez ${pontuacao} pontos!`)
+                    pontuacao = 0;
+                    break;
+                    default:
+                        alert(`Digite uma opção válida`)
+                        break;
+
+                case 4:
+                    resposta = prompt("Jacaerys Velaryon era bastardo? Verdadeiro ou falso").toLowerCase();
+                    if (resposta == "verdadeiro")
+                    pontuacao++
+                    
+            }
+
+        }
+    </script>
+</body>
+</html>
