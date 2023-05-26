@@ -1,3 +1,4 @@
+function contagem(){
 let saida = document.getElementById('saida');
 let num = Number(document.getElementById('fnum').value);
 saida.innerHTML += `<h2>Contando de 0 até ${num}</h2>`
@@ -8,3 +9,4 @@ while (cont <= num){
 }
 
 saida.innerHTML += `&#x1F3C1`;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="compras('computador')">Computador</button>
+    <button onclick="compras('camera')">Camera</button>
+    <button onclick="compras('celular')">Celular</button>
+
+    <script>
+        var item = prompt("O que você deseja comprar? \n Celular \n Computador \n Camera ")
+
+        function compras (item) {
+            switch(item){
+                case "celular":
+                if(confirm("celular custa R$ 2000")){
+                    alert("Parabens pela compra");
+                    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjt6Im4woz_AhXImkwKHckUAPAYABAMGgJvYQ&ohost=www.google.com&cid=CAESbOD2Qb5WLThUKnm9dnNuYsma3b38iUpRFbpS7nlua4CWyUdKEUfY559QyvrZ915HM85_SIOBdjB-euM6tvRXT-25xCxKRxDr7YV0qA0ZLTxyboqZOvXH0alt9fpNc03MGE3rJ2I8ZirMTqlZ-A&sig=AOD64_0K2HCZx13OrNDNJzq4LNXHSW_jBA&ctype=5&q=&ved=2ahUKEwjp6_y3woz_AhVaqpUCHeThCUEQwg8oAXoECAcQCg&adurl=")
+                } else{
+                    alert ("Quem sabe na próxima")
+                }
+                break;
+                case "computador":
+                if(confirm("celular custa R$ 5000")){
+                    alert("Parabens pela compra");
+                    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjt6Im4woz_AhXImkwKHckUAPAYABAMGgJvYQ&ohost=www.google.com&cid=CAESbOD2Qb5WLThUKnm9dnNuYsma3b38iUpRFbpS7nlua4CWyUdKEUfY559QyvrZ915HM85_SIOBdjB-euM6tvRXT-25xCxKRxDr7YV0qA0ZLTxyboqZOvXH0alt9fpNc03MGE3rJ2I8ZirMTqlZ-A&sig=AOD64_0K2HCZx13OrNDNJzq4LNXHSW_jBA&ctype=5&q=&ved=2ahUKEwjp6_y3woz_AhVaqpUCHeThCUEQwg8oAXoECAcQCg&adurl=")
+                } else{
+                    alert ("Quem sabe na próxima")
+                }
+                break;
+                case "camera":
+                if(confirm("celular custa R$ 2000")){
+                    alert("Parabens pela compra");
+                    window.open("https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjt6Im4woz_AhXImkwKHckUAPAYABAMGgJvYQ&ohost=www.google.com&cid=CAESbOD2Qb5WLThUKnm9dnNuYsma3b38iUpRFbpS7nlua4CWyUdKEUfY559QyvrZ915HM85_SIOBdjB-euM6tvRXT-25xCxKRxDr7YV0qA0ZLTxyboqZOvXH0alt9fpNc03MGE3rJ2I8ZirMTqlZ-A&sig=AOD64_0K2HCZx13OrNDNJzq4LNXHSW_jBA&ctype=5&q=&ved=2ahUKEwjp6_y3woz_AhVaqpUCHeThCUEQwg8oAXoECAcQCg&adurl=")
+                } else{
+                    alert ("Quem sabe na próxima")
+                }
+                break;
+                default:
+                    alert ("item inválido");
+                   break;
+                           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<style>
+    body {
+        background-color: purple;
+    }
+
+    #main{
+        margin: auto;
+        width: 60%;
+        height: auto;
+        text-align: center;
+    }
+
+    #titulo img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #titulo h1{
+        font-size: 30px;
+        color: rgb(6, 160, 6);
+    }
+
+    #nome h2{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+    }
+
+    
+    button{
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        display: inline-flex;
+        justify-content: space-around;
+        cursor: pointer;
+        font-weight: 400;
+        margin-right: 20px;
+        
+    }
+
+    .serie {
+        background-color: orangered;
+        border:3px black solid;
+    }
+
+    .game{
+        background-color: rgb(75, 75, 75);
+        border:3px maroon solid;
+    }
+
+    .hq{
+        background-color: black;
+        border:3px darkblue solid;
+    }
+
+
+
+
+
+</style>
+<body>
+   <div id="main">
+    <div id="titulo">
+        <img src="img/ridler.jpg">
+        <h1> Quiz</h1>
+    </div>
+    
+    <div id="nome"></div>
+    <button class="serie" onclick="jogo('modern')">Modern Family</button>
+    <button class="game" onclick="jogo('witcher')">The Witcher</button>
+    <button class="hq" onclick="jogo('batman')">Batman</button>
+   </div>
+    <script>
+
+        var quiz;
+
+        const jogador = prompt("Qual o seu nome?");
+        let op = 10;
+        let cont = 0;
+        let pontos = 0;
+        let resposta;
+
+        document.getElementById("nome").innerHTML =  `<h2> Olá ${jogador}! Escolha o seu quiz (verdadeiro ou falso):`
+
+        function jogo (quiz){
+            switch (quiz){
+                case "modern":
+                    resposta = prompt("Glória é mexicana?").toLowerCase();
+                    if(resposta ==='falso'){
+                        pontos ++;
+                    } else{
+                        alert ("Respota errada! Glória é colobiana.")
+                    }
+                    resposta = prompt("Lily é vietnamita?").toLowerCase();
+                    if(resposta ==='verdadeiro'){
+                        pontos ++;
+                    } else{
+                        alert ("Respota errada!")
+                    }
+                    resposta = prompt("O dia dos namorados é o feriado favorito da Claire?").toLowerCase();
+                    if(resposta ==='falso'){
+                        pontos ++;
+                    } else{
+                        alert ("Respota errada! Seu feriado favorito é  o halloween.")
+                    }
+                    alert (`${jogador} você fez ${pontos} pontos!`);
+                    pontos = 0;
+                    break;
+               
+                case "witcher":
+                    resposta = prompt("Ciri se torna uma bruxa?").toLowerCase();
+                        if(resposta ==='verdadeiro'){
+                        pontos ++;
+                        } else{
+                         alert ("Respota errada!")
+                        }
+                    resposta = prompt("O líder da caçada selvagem é Erenthil?").toLowerCase();
+                        if(resposta ==='falso'){
+                        pontos ++;
+                        } else{
+                         alert ("Respota errada! seu nome é Eredin.")
+                        }
+                    resposta = prompt("Geralt odeia portais?").toLowerCase();
+                        if(resposta ==='verdadeiro'){
+                        pontos ++;
+                        } else{
+                         alert ("Respota errada!")
+                        }
+                        alert (`${jogador} você fez ${pontos} pontos!`);
+                        pontos = 0;
+                        break;
+               
+                case "batman": 
+                        resposta = prompt("o Coringa antes de se tornar vilão trabalhava como palhaço?").toLowerCase();
+                          if(resposta ==='falso'){
+                          pontos ++;
+                          } else{
+                          alert ("Respota errada! Era comediante.")
+                          }
+                        resposta = prompt("Dick Grayson foi primeiro Robin?").toLowerCase();
+                            if(resposta ==='verdadeiro'){
+                            pontos ++;
+                            } else{
+                            alert ("Respota errada!")
+                            }
+                        resposta = prompt("Batman já usou armas de fogo?").toLowerCase();
+                            if(resposta ==='verdadeiro'){
+                            pontos ++;
+                            } else{
+                            alert ("Respota errada!")
+                            }
+                            alert (`${jogador} você fez ${pontos} pontos!`);
+                            pontos = 0;
+                            break;
+                        
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

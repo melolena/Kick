@@ -20,6 +20,10 @@ body{
     max-width: 100%;
 }
 
+#logoresponsiva{
+    display: none;
+}
+
 .topnav{
     display: flex;
     overflow: hidden;
@@ -81,7 +85,7 @@ body{
 }
 
 /*body*/
-.body{
+.content{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -219,7 +223,8 @@ body{
     font-size: 20px;  
     margin-top: 20px;
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1200px) {
     .topnav a:not(:first-child) {
       display: none;
     }
@@ -254,6 +259,15 @@ body{
   
     #header img {
       display: none;
+    }
+
+    #logoresponsiva{
+        display: absolute;
+    } 
+    
+    #logoresponsiva img{
+        width: 40px;
+        height: 40px;
     }
   
     .topnav i {
