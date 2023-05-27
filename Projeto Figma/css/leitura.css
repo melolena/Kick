@@ -91,7 +91,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 800px;
+    height: 70%;
 }
 
 /*Primeira fila */
@@ -99,12 +99,12 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 35%;
     height: 100%;
     border-right: 4px solid black;
-    margin-right: 40px;
+    box-sizing: border-box;
     z-index: 0;
 }
 
@@ -112,8 +112,10 @@ body{
     width: 90%;
     height: auto;
     border: 1px solid #391463;
+    box-sizing: border-box;
     border-radius: 20px;
-    margin-right: 25px;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .focusTitle h1{
@@ -124,7 +126,7 @@ body{
     border-bottom: 1px solid #39146369;
     color: #ea526f;
     width: 90%;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 .focusTitle h2{
@@ -132,6 +134,26 @@ body{
     text-align: center;
     margin-right: 50px;
     color: #5F8181;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px 0px 0px;
+}
+
+.subtitulo h2{
+    font-size: 22px;
+    color: #5F8181;
+    margin-right: 10px;
+}
+
+.subtitulo i{
+    font-size: 22px;
+    color: #ea526f;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 .part1 p{
@@ -157,10 +179,10 @@ body{
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
-    margin: 0px 0px 3px 0px;
+    margin: 6px 0px 3px 0px;
 }
 
-.part2 #sinopse{
+#sinopse{
     margin-top: 10px;
 }
 
@@ -182,6 +204,18 @@ body{
     align-self: center;
     border: 2px solid #391463;
     border-radius: 10px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+.table .title{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.table h2{
+    margin-top: 0;
 }
 
 .title h2{
@@ -190,24 +224,28 @@ body{
     text-align: center;
     color: #ea526f;
     padding-top: 2px;
-    margin-bottom: 0px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #391463;
 }
 
-#box a{
+#box1 a, #box2 a{
     text-decoration: none;
+    color: black;
 }
 
-#box1{
-    height: 27%;
+#box1, #box2{
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-bottom: 1px solid #391463;
+    text-decoration: none;
     
 }
 
-#box1 h4{
+
+
+#box1 h4, #box2 h4{
     font-style: normal;
     text-align: self-start;
     font-weight: 550;
@@ -220,7 +258,7 @@ body{
     order:0;
 }
 
-#box1 p{
+#box1 p, #box2 p{
     font-style: normal;
     font-weight:600;
     font-size: 12px;
@@ -233,46 +271,39 @@ body{
     order:1;
 }
 
-#box1 a{
+.box1R, .box2R{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #391463;
+    text-decoration: none;
+    
+}
+
+.box2R{
+  border-bottom: none;
+}
+
+.box1R a , .box2R a{
     text-decoration: none;
 }
 
-#box2{
-    height: 34%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-bottom: 1px solid #391463;
-}
 
-#box2 h4{
+.box1R h4, .box2R h4{
     font-style: normal;
-    text-align: self-start;
+    text-align: center;
     font-weight: 550;
     font-size: 17px;
     display: flex;
-    align-items: flex-start;
-    margin: 5px 0px 0px 5px; 
-    color: black;
-    order:0;
-}
-
-#box2 p{
-    font-style: normal;
-    font-weight:600;
-    font-size: 12px;
-    line-height: 11px;
-    margin: 2px 5px 0px 0px;
-    color: #89a7a7;
-    text-align: end;
-    margin: 0px 5px 0px 0px;
-    order:1;
-}
-
-#box2 a{
+    justify-content: center;
     text-decoration: none;
+    color: black;
 }
 
+.box1R h4{
+    margin-top: 0;
+}
 /*footer*/
 .footer{
     height: 15px;
@@ -287,7 +318,7 @@ body{
  .textFooter {
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
     color: #748b8b;;
     text-shadow: #556464;
@@ -317,6 +348,19 @@ body{
 
     .part3 p{
         font-size: 1rem;
+    }
+
+    .content{
+      height: auto;
+      width: 100%;
+    }
+
+    .part1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+      height: auto;
     }
 }
 
@@ -349,8 +393,7 @@ body{
       
     
     }
-
-    
+ 
     #header {
         height: 50px;
       }
@@ -358,15 +401,8 @@ body{
       #header img {
         display: none;
       }
-  
-      #logoresponsiva{
-          display: absolute;
-      } 
+   
       
-      #logoresponsiva img{
-          width: 40px;
-          height: 40px;
-      }
     
       .topnav i {
         margin-top: 5px;
@@ -399,8 +435,8 @@ body{
       }
 
       .content h2{
-        font-size: 1.2rem;
-        margin: 2px 0px 10px 0px;
+        font-size: 1rem;
+        margin: 4px 0px 10px 0px;
       }
 
       .content p{
@@ -411,18 +447,63 @@ body{
       .content h4{
         font-size: 1.1rem;
       }
+      
+      .content i{
+        font-size: 1rem;
+      }
+
+      .part1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        height: auto;
+      }
 
       .part1 img{
         margin-top: 15px 0px 0px 0px;
+      }
+
+      .subtitulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .subtitulo h2{
+        font-size: 1rem;
+      }
+
+      .subtitulo i{
+        font-size: 1rem;
+        margin: 0px 2px 7px 0px;
+      }
+
+      .part1{
+        height: 100%;
       }
 
       .part1, .part2, .part3 p{
         font-size: 1rem;
       }
 
+      .footer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin: none;
+      }
 
-      #icons i{
-        width: 1rem;
+      .textFooter{
+        font-size: 1rem;
+        margin: 2px 6px 0px 0px;
+      }
+
+      .footer #icons i{
+        font-size: 1rem;
+        margin: 16px 0px 5px 0px;
+        align-items: center;
       }
 
 }
@@ -431,9 +512,28 @@ body{
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 912px) {
     .part1{
         border-right: none;
+      }
+
+      .content h1{
+        font-size: 1.6rem;
+        margin: 5px 0px 0px 0px;
+      }
+
+      .content h2{
+        font-size: 1.4rem;
+        margin: 2px 0px 10px 0px;
+      }
+
+      .content p{
+        font-size: 1.1rem;
+        margin:5px 0px 3px 0px;
+      }
+
+      .content h4{
+        font-size: 1.2rem;
       }
 
       .part1, .part2, .part3{
@@ -444,9 +544,48 @@ body{
         margin: none;
       }
 
+      .subtitulo h2{
+        font-size: 1rem;
+      }
+
+      .subtitulo i {
+        font-size:1rem ;
+      }
+
       .part3{
         margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+      
+      .table{
+        width: 95%;
+        align-self: center;  
+        margin: auto;      
+      }
+
+      
+
+      .footer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin: none;
+      }
+
+      .textFooter{
+        font-size: 0.8rem;
+        margin: 2px 6px 0px 0px;
+      }
+
+      .footer #icons i{
+        font-size: 0.8rem;
+        margin: 16px 0px 5px 0px;
+        align-items: center;
+      }
+
 
 }   
 
