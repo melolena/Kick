@@ -76,7 +76,7 @@ body{
 }
 
 /*body*/
-.body{
+.content{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -97,7 +97,7 @@ body{
 
 /*Manchete*/
 .headline{
-    width: 100%;
+    width: auto;
     max-width: 600px;
     height: auto;
     display: flex;
@@ -190,77 +190,47 @@ body{
     margin-bottom: 70px;
 }
 
-/*Primeira notícia*/
-
-#news1{
+#news1, #news2{
     height: auto;
     width: 100%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-left: 5px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #39146369;
+
 }
 
-#news1 h4{
+#moreNews a{
+  text-decoration: none;
+}
+
+#news1 h4, #news2 h4{
     font-style: normal;
     text-align: self-start;
-    font-weight: 200;
+    font-weight: 550;
     font-size: 17px;
     display: flex;
-    align-items: start;
-    margin-left: 5px;
+    align-items: flex-start;
+    color: black;
     order:0;
+    margin-left: 5px;
    
     
 }
 
-#news1 p{
+#news1 p, #news2 p{
     font-style: normal;
+    text-align: end;
     font-weight:600;
     font-size: 12px;
     line-height: 11px;
-    margin: top 10px;
+    margin-right: 10px;
     color: #89a7a7;
     align-items: flex-end;
     order:1;
 }
 
-/* Segunda notícia */
-
-#news2{
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-    border-top: 1px solid #89a7a7;
-    border-bottom: 1px solid #89a7a7;
-    display: flex;
-    justify-content: start;
-}
-
-#news2 h4{
-    font-style: normal;
-    font-weight: 200;
-    font-size: 17px;
-    display: flex;
-    align-items: start;
-    margin-left: 5px;
-    display: flex;
-    align-items: start;
-    order:0;    
-}
-
-#news2 p{
-    font-style: normal;
-    font-weight:600;
-    font-size: 12px;
-    line-height: 11px;
-    margin: top 10px;
-    color: #89a7a7;
-    align-items: flex-end;
-    order:1;
-    margin-right: 27px;
-}
 
 /*part2*/
 .part2{
@@ -268,7 +238,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 4px solid black;
     flex-wrap: wrap;
 }
@@ -281,8 +251,8 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
     border-right: 4px solid black;
-    margin-right: 40px;
 }
 
 .lastReview img{
@@ -293,7 +263,7 @@ body{
     overflow: auto;
     margin: 20px 10px;
   
-    
+
 }
 
 
@@ -333,9 +303,9 @@ body{
 
 .bodyReview p{
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 5px 5px 10px 17px;
+    margin: 5px 7px 10px 15px;
 }
 
 .bodyReview .leiaMais{
@@ -346,29 +316,28 @@ body{
 /*About me*/
 .aboutMe{
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     flex-direction: row;
-    margin-left: 50px;
+    align-items: center;
 }
 
 .aboutMe img{
-    width: 100%;
+    width: 200%;
     height:auto; 
     border: 1px solid #391463;
     border-radius: 20px;
     overflow: auto;
-    margin: 20px 10px;
+    margin:  20px 15px;
  
 }
 
 .textAboutMe{
-    
     display: flex;
     flex-direction: column;
-
+    margin-right: 40px;
 }
 
 .textAboutMe h2{
@@ -376,20 +345,20 @@ body{
     font-size: 25px;
     text-align: center;
     color: #ea526f;  
-    margin:40px 60px 0px 50px;
+    margin:5px 50px 20px  40px;
     border-bottom: 1px solid #39146369;
 
 }
 
 .textAboutMe p{
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 80px 5px 10px 17px;
+    margin: 0px 10px 10px 0px;
 }
 
 .footer{
-    height: 100px;
+    height: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -410,19 +379,38 @@ body{
 }
 
 
-.footer #icons{
-    margin-left: 20px;
+      .footer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin: none;
+        height: 15%;
+      }
+
+      .textFooter{
+        font-size: 0.8rem;
+        margin: 2px 6px 0px 0px;
+      }
+
+      .footer #icons i{
+        font-size: 0.8rem;
+        margin: 0px 0px 5px 0px;
+        align-items: center;
+      }
+
+@media screen and (max-width: 1280px) {
+  .headline{
+    max-width: 480px;
+  }
+  
+  #moreNews{
+    max-width:400px;
+  }
+
 }
 
-.footer #icons i{
-    margin-left: 10px;
-    width: 26px;
-    height: 23px;
-    color: #391463;
-    font-size: 20px;  
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 913px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -448,9 +436,6 @@ body{
     width: 100%;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 1200px) {
   #header {
     height: 50px;
   }
@@ -477,67 +462,147 @@ body{
     display: none;
   }
 
-  .body {
-    height: 1000px;
+  .content {
+    width: 100%;
+    height: auto;
     position: relative;
   }
 
-  .body h2,
-  .body h4 {
+  .content h2{
+    font-size: 1.3rem;
+  }
+
+  .content h3{
     font-size: 1.2rem;
   }
 
-  .body p,
-  .body a {
-    font-size: 0.9rem;
+  .content h4{
+    font-size: 1.1rem;
+  }
+  
+  .content p{
+    font-size: 1.0rem;
+  }
+
+  .content img{
+    width: 100%;
+    height: auto;
   }
 
   .part1 {
     display: flex;
     flex-wrap: wrap;
-    height: 350px;
+    height: auto;
+    margin: auto;
     border: none;
     margin: none;
   }
 
   .headline {
-    max-width: 400px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #748b8b;
   }
+
+  .textNews p {
+    margin: auto;
+  }
+
+  .headline img{
+    order:0;
+  }
+
 
   #moreNews {
-    max-width: 400px;
-    height: 60%;
-  }
-
-  #news2 {
-    border-bottom: none;
-    height: 15px;
-  }
-
-  .part2 {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
     display: flex;
-    flex-wrap: wrap;
-    height: 650px;
-    margin: 10px;
+    justify-content: center;
+    margin-top:20px;
+    border: none;
+    border-radius: 0px;
+
+
+
   }
 
-  .lastReview {
-    max-width: 400px;
-    margin-top: 100px;
+  .titulo{
+    height: 35px;
     border: none;
   }
 
-  .lastReview img {
-    width: 60%;
-    height: 60%;
+  .titulo h2{
+    margin-top: 70px;
+  }
+ 
+  #news1, #news2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    align-items: flex-start;
+
+  }
+
+   #news1 H4, #news2 h4{
+    font-size: 1rem;
+   }
+
+  .part2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    margin: none;
+  }
+
+  .part2 img{
+    width: 150%;
+  }
+
+  .lastReview {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #748b8b;
+  }
+
+  .lastReview img{
+    width: 50%;
+    height: auto;
+  }
+
+  .bodyReview{
+    margin: auto;
   }
 
   .aboutMe {
-    max-width: 400px;
-    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
     padding: 10px;
-    margin-bottom: 25px;
+    margin: 20px 0px;
+    border-top: 1px solid #748b8b;
+
+  }
+
+  .aboutMe img{
+    width: 80%;
+    height: auto;
+  }
+
+  .textAboutMe{
+    margin: auto;
   }
 
   .textAboutMe p {
@@ -548,18 +613,29 @@ body{
     margin-top: 25px;
   }
 
-  .aboutMe img {
-    width: 60%;
-    height: 60%;
+
+  
+  .footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin: none;
+    height: 15px;
   }
 
-  .footer {
-    height: 40px;
+  .textFooter{
+    font-size: 0.8rem;
+    margin: 2px 6px 0px 0px;
   }
+
+  .footer #icons i{
+    font-size: 0.8rem;
+    margin: 5px 0px 5px 0px;
+    align-items: center;
+  }
+
 }
 
-@media screen and (max-width: 600px) {
-  .aboutMe {
-    border-top: 1px solid #748b8b;
-  }
-}
+
