@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: linear-gradient(to right top, #a811d3, #705ef3, #1982ff, #009cfb, #00b0ee); background-repeat: no-repeat; background-size: 100%;">
+
+    <div class="main" style="width: 50%; margin: auto; text-align: center;">
+        <h1>Universidade</h1>
+        <p>Escolha um curso</p>
+
+        <select id="opcoes" onchange="troca()">
+            <option value="Medicina">Medicina</option>
+            <option value="Biologia">Biologia</option>
+            <option value="Computação">Computação</option>
+            <option value="Engenharia">Engenharia</option>
+        </select>
+
+        
+
+        <h3 id="curso"></h3>
+
+        <button id="study" onclick="confirma()">Confirmar</button>
+
+        <input type="text" id="campoTexto" onkeypress="tecla()"/>
+
+    </div>
+    
+    <script>
+        
+        function tecla(){
+            document.getElementById("campoTexto").style.backgroundColor = "yellow";
+            alert("Você pressionou uma tecla")
+        }
+
+        function troca(){
+            var op = document.getElementById("opcoes").value;
+            document.getElementById("curso").innerHTML = "Você escolheu: " + op
+          
+       
+        }
+
+        function confirma(){
+                var op = document.getElementById("opcoes").value
+                alert ("Você irá estudar: " + op)
+        }
+
+       
+
+
+        /* console.log(calculadora());
+        
+        function calculador(){
+            var a = 5
+            var b = 7
+
+            function soma (a,b){
+                let calculo = a + b
+                return calculo
+            }
+
+            function soma (a,b){
+                let calculo = a + b
+                return calculo
+            }
+
+            return subtracao (a,b)
+
+              function name()
+            var nome = prompt("Insira seu nome")
+            return nome
+
+
+
+            loja()
+
+        function login(usuario, senha){
+            if (usuario==='Thalita' && senha === 1234){
+            return true
+            } else{
+            return false
+            }
+        }
+
+        function loja(){
+            let logado 
+
+            if (login('Thalita', 123456)){
+                return logado = TextTrackCue
+            } else{
+                return logado = false
+            }
+        }
+
+
+        function login(usuario, senha){
+            if (usuario==='Thalita' && senha === 1234){
+            return true
+            } else{
+            return false
+            }
+        }
+
+        function loja(){
+            let logado 
+
+            if (login('Thalita', 123456)){
+                return logado = true
+            } else{
+                return logado = false
+            }
+        }
+       
+
+        } */ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+    <style>
+        body{
+            background-color: rgb(185, 255, 232);
+        }
+    
+        #container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+    
+        button{
+            background-color: green;
+            color: aliceblue;
+            border-color: 2px solid black;
+            padding: 10px;
+            align-self: center;
+            width: 200px;
+        }
+    
+        #sorteio{
+            color: blue;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <button>Escolha uma Viagem!</button>
+        <h2 id="sorteio"></h2>
+    </div>
+
+    <script>
+
+        var btn =document.querySelector('button')
+
+
+        btn.onclick = function lista(){
+            var viagens = ["São Paulo", "Recife", "Aracaju", "Gramado", "Canela", "Pipa", "Serra Negra", "Cupe", "Carne de Vaca", "Paulo Afonso"];
+
+           var aleatory = viagens [Math.floor(Math.random()*viagens.length)];
+
+                 document.getElementById("sorteio").innerHTML = "Sua viagem escolhida é: " + aleatory;
+
+        }
+    </script>
+    
+</body>
+</html>
