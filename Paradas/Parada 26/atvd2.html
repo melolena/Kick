@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <div class="container">
+        <form action="login.html" id="local" method="post">
+            <label>Região:</label>    
+            <select id="region" name="region">
+                <option value="nordeste">Nordeste</option>
+                <option value="norte">Norte</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="centro-oeste">Centro-Oeste</option>
+                <option value="sul">Sul</option>
+            </select>  
+           
+            <label>Estado:</label>
+            <select id="state" name="state">
+                <option value="pernambuco">Pernambuco</option>
+                <option value="sao-paulo">São Paulo</option>
+                <option value="parana">Paraná</option>
+                <option value="para">Pará</option>
+                <option value="goias">Goiás</option>
+            </select>
+
+            <label>Cidade:</label>
+            <select id="city" name="city">
+                <option value="recife">Recife</option>
+                <option value="campinas">Campinas</option>
+                <option value="curitiba">Curitiba</option>
+                <option value="belem">Belém</option>
+                <option value="goiania">Goiania</option>
+            </select>
+
+            <input type="submit" value="enviar" id="submit" onclick="getState()">
+
+        </form>
+    </div>
+    
+    <script>
+        function getState(){
+        var formulario = document.getElementById("local");
+
+        alert (formulario.elements["state"].value);
+        }
+    </script>
+</body>
+</html>
